@@ -22,7 +22,6 @@ public class SpecialDiscountService implements DiscountService {
 	
 	@Override
 	public int getDiscountPercent(int totalPrice) {
-		// TODO Auto-generated method stub
 //		return totalPrice > limit ? specialPercent : defaultPercent;
 		return totalPrice > config.getDiscount().getSpecial().getLimit()
 				? config.getDiscount().getSpecial().getPercent()
